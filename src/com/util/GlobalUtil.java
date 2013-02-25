@@ -1,5 +1,7 @@
 package com.util;
 
+import java.util.ArrayList;
+
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -13,6 +15,8 @@ public class GlobalUtil {
 
     public static FlickrPhoto detailImage;
     private SharedPreferences defaultSharedPreferences;
+    
+    public static ArrayList<FlickrPhoto> photos = new ArrayList<FlickrPhoto>();
 
     /** A private Constructor prevents any other class from instantiating. */
     private GlobalUtil(final FlickrInterestingViewer application) {
@@ -87,7 +91,6 @@ public class GlobalUtil {
 
     public static String buildImageUrl(String size) {
         String url = buildImageUrl(detailImage, size);
-        detailImage = null;
         return url;
     }
 } 

@@ -7,34 +7,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
-import android.widget.ImageView;
 
 import com.tomdignan.remoteimage.RemoteImageView;
 import com.util.GlobalUtil;
 
 public class ImageAdapter extends BaseAdapter {
-    private Context mContext;
-    private ArrayList<FlickrPhoto> mData;
     private LayoutInflater inflater;
 
     public ImageAdapter(Context c) {
-        mContext = c;
         inflater = LayoutInflater.from(c);
-        mData = new ArrayList<FlickrPhoto>();
     }
 
     public void addData(ArrayList<FlickrPhoto> photos) {
-        mData.addAll(photos);
+        GlobalUtil.photos.addAll(photos);
         notifyDataSetChanged();
     }
     
     public int getCount() {
-        return mData.size();
+        return GlobalUtil.photos.size();
     }
 
     public FlickrPhoto getItem(int position) {
-        return mData.get(position);
+        return GlobalUtil.photos.get(position);
     }
 
     public long getItemId(int position) {
