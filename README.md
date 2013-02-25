@@ -14,3 +14,9 @@ Left to do:
 - Improve visual design
 - Possibly add Pull-To-Refresh instead of refresh from actionbar
 - Add zoom-in in detail view
+
+
+Building
+
+- Add the two projects in libs to your IDE as library projects. ActionBarSherlock and RemoteImageView
+- Hack away
