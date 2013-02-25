@@ -8,16 +8,16 @@ package com.tomdignan.remoteimage;
 
 public final class R {
 	public static final class string {
-		public static final int app_name = 0x7f040000;
+		public static final int app_name = 0x7f09000f;
 	}
 	public static final class layout {
-		public static final int main = 0x7f030002;
+		public static final int main = 0x7f030019;
 	}
 	public static final class styleable {
 		public static final int[] RemoteImageView = { 0x0101013b };
 		public static final int RemoteImageView_android_indeterminateDrawable = 0;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020000;
+		public static final int ic_launcher = 0x7f02006f;
 	}
 }

@@ -28,7 +28,9 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     public FlickrPhoto getItem(int position) {
-        return GlobalUtil.photos.get(position);
+        if (GlobalUtil.photos.size() > position)
+            return GlobalUtil.photos.get(position);
+        return null;
     }
 
     public long getItemId(int position) {

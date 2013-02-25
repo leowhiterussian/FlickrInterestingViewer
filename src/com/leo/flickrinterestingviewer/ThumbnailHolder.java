@@ -11,5 +11,4 @@ public class ThumbnailHolder {
         image.setImageUrl(GlobalUtil.buildImageUrl(item, "s"));
         image.loadImage();
     }
-
 }
